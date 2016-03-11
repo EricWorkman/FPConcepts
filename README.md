@@ -8,6 +8,7 @@ Some of the "Core Concepts" a quick community poll recommended were:
 * Pattern Matching
 * map/reduce/filter
 * recursion
-* recursive processing of data structures  
+* recursive processing of data structures
+* Separation of pure functional code from code with side effects  
 
 There may be more (and these probably need expansion) so please add/comment!  

@@ -1,5 +1,5 @@
 # Recursion
-Recursion is the technique of calling a function inside itself. It is typically used to break work into increasingly smaller pieces and to combine the results into a complete solution. [Recursive merge sort](https://en.wikipedia.org/wiki/Merge_sort) is an example of this technique in action.
+Recursion is the technique of calling a function inside itself. It is typically used to break work into increasingly smaller pieces and to combine the result to form a complete solution. [Recursive merge sort](https://en.wikipedia.org/wiki/Merge_sort) is an example of this technique in action.
 
 Recursive functions need to have at least one base case and at least one recursive case. The base case is the terminal function call. The classic example of this is the calculation of the nth value in the Fibonacci sequence. The sequence is defined as F<sub>0</sub> = 0, F<sub>1</sub> = 1, F<sub>n</sub> = F<sub>n-1</sub> + F<sub>n-2</sub>. In elixir, the function is implemented as follows:
 
@@ -41,7 +41,7 @@ def fib(0), do: 0
 # recursive case
 def fib(num), do: fib(num - 1) + fib(num - 2)
 ```
-In the above example, we missed the case of `fib(1)`. When we call `fib(2)`, it becomes `fib(1) + fib(0)`. Because we missed the one base case of the recursion, the `fib(1)` becomes `fib(0) + fib(-1)`. The `fib(0)` returns 0, but the `fib(-1)` will call with increasingly larger negative values until the stack overflows.
+In the above example, we missed the case of `fib(1)`. When we call `fib(2)`, it becomes `fib(1) + fib(0)`. Because we missed the `fib(1)` base case of the recursion, `fib(1)` becomes `fib(0) + fib(-1)`. The `fib(0)` returns 0, but the `fib(-1)` will call with increasingly larger negative values until the stack overflows.
 
 ### References
 [Elixir Getting Started - Recursion](http://elixir-lang.org/getting-started/recursion.html)  
