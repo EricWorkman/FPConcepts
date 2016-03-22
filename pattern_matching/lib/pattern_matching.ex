@@ -1,10 +1,14 @@
 defmodule PatternMatching do
+  @moduledoc
 
   defmodule Language do
+    @moduledoc
     defstruct [:language_name, :special_code]
   end
 
   defmodule User do
+    @moduledoc
+
     defstruct user_name: nil, language: %Language{}
 
     def greet(%User{user_name: name, language: %{language_name: "Elixir"}}) do
