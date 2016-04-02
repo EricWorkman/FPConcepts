@@ -1,10 +1,8 @@
 # Referential Transparency
 
-WIP
-
 > An expression is said to be referentially transparent if it can be replaced with its value without changing the behavior of a program (in other words, yielding a program that has the same effects and output on the same input).  - Wikipedia
 
-Same inputs between calls == same outputs between calls
+Same inputs == same outputs
 
 ```python
 def ref_trans(x, y):
@@ -73,9 +71,10 @@ iex(4)> x
 There are no side effects.
 `add_one.(1)` will always return 2.
 
+Macros are hygenic in Elixir due to late resolution. Read about [macro hygiene](http://elixir-lang.org/getting-started/meta/macros.html).
+
 ## But why referential transparency?
 
 1.  Easier to test
 1.  Easier to reason about
 1.  Easier to use concurrently
-
