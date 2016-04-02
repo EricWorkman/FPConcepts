@@ -71,7 +71,7 @@ iex(4)> x
 There are no side effects.
 `add_one.(1)` will always return 2.
 
-Macros are hygenic in Elixir due to late resolution. Read about [macro hygiene](http://elixir-lang.org/getting-started/meta/macros.html).
+Macros are hygenic in Elixir due to late resolution. Read about [macro hygiene](http://elixir-lang.org/getting-started/meta/macros.html#macros-hygiene).
 
 ## But why referential transparency?
 
