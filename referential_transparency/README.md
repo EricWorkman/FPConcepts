@@ -15,7 +15,7 @@ def ref_trans(x, y):
 y = 1
 
 def ref_opaq(x):
-    # relies on a global, which can be changed by other functions """
+    # relies on a global, which can be changed by other functions
     global y
     y += 1
     return x + y
@@ -73,7 +73,7 @@ iex(4)> x
 There are no side effects.
 `add_one.(1)` will always return 2.
 
-## But why ~~male models~~ referential transparency?
+## But why referential transparency?
 
 1.  Easier to test
 1.  Easier to reason about
